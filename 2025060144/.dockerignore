@@ -1,0 +1,42 @@
+# Node.js
+**/node_modules
+**/.nuxt
+**/.output
+**/dist
+
+# Python
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.Python
+**/.venv
+**/venv/
+**/*.egg-info/
+**/.pytest_cache
+
+# IDE
+.vscode
+.idea
+**/*.swp
+**/*.swo
+
+# Git
+.git
+.gitignore
+
+# 环境变量
+.env
+.env.local
+
+# 日志
+**/*.log
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 其他
+*.md
+!README.md
+.editorconfig
