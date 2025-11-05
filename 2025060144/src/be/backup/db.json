@@ -1,0 +1,55 @@
+{
+  "USR1": [
+    {
+      "formId": "0001",
+      "title": "活动报名表单",
+      "startDate": "2025-10-26 00:00",
+      "endDate": "2025-10-31 23:59",
+      "formData": {},
+      "timeline": [
+        0,
+        {
+          "date": "2025-10-25 21:49:40",
+          "title": "提交表单",
+          "icon": "ic:baseline-upload"
+        },
+        {
+          "date": "",
+          "title": "组长审核",
+          "icon": "ic:baseline-approval"
+        },
+        {
+          "date": "",
+          "title": "办结",
+          "icon": "ic:baseline-done-all"
+        }
+      ]
+    },
+    {
+      "formId": "0002",
+      "title": "基础信息表单",
+      "startDate": "2025-10-01 10:00",
+      "endDate": "2025-12-01 23:59",
+      "formData": {},
+      "timeline": [
+        0,
+        {
+          "date": "2025-10-27 18:35:16",
+          "title": "提交表单",
+          "icon": "ic:baseline-upload"
+        },
+        {
+          "date": "",
+          "title": "等待确认",
+          "icon": "ic:baseline-done"
+        },
+        {
+          "date": "",
+          "title": "办结",
+          "icon": "ic:baseline-done-all"
+        }
+      ]
+    }
+  ],
+  "USR2": {}
+}
