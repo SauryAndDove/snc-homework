@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动报名学生信息展示</title>
+    <style>
+        .activity-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .student-item {
+            margin: 8px 0;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .no-students {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>活动报名学生信息展示</h1>
+    <div id="activityContainer"></div>
+
+    <script>
+        // 从localStorage读取数据AI
+        const activityStudents = JSON.parse(localStorage.getItem('activityStudents')) || {
+            "活动1": [],
+            "活动2": [],
+            "活动3": []
+        };
+
+        const container = document.getElementById('activityContainer');
+
+        // 遍历每个活动，动态生成展示内容AI
+        for (const activityName in activityStudents) {
+            if (activityStudents.hasOwnProperty(activityName)) {
+                const students = activityStudents[activityName];
+                const card = document.createElement('div');
+                card.className = 'activity-card';
+                card.innerHTML = `<h2>${activityName}</h2>`;
+
+                const studentList = document.createElement('div');
+                if (students.length === 0) {
+                    studentList.className = 'no-students';
+                    studentList.textContent = '暂无学生报名';
+                } else {
+                    students.forEach((student, index) => {
+                        const studentItem = document.createElement('div');
+                        studentItem.className = 'student-item';
+                        studentItem.innerHTML = `
+                            <p><strong>姓名：</strong>${student.studentname}</p>
+                            <p><strong>学号：</strong>${student.studentId}</p>
+                            <p><strong>学院：</strong>${student.college}</p>
+                            <p><strong>班级：</strong>${student.className}</p>
+                            <hr>
+                        `;
+                        studentList.appendChild(studentItem);
+                    });
+                }
+                card.appendChild(studentList);
+                container.appendChild(card);
+            }
+        }
+    </script>
+</body>
+</html>

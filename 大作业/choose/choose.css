@@ -1,0 +1,66 @@
+body {
+    background-image: url("../backgroundimg/snc.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 让登录框垂直居中 AI*/
+    animation: WFB 25s linear 0s infinite;
+}
+
+.choose-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;/*设置元素边框圆角*/
+    width: 100%;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+    max-width: 300px; /* 最大宽度限制，避免电脑端过宽 AI*/
+    background-color: aquamarine;
+}
+
+/*表单样式*/
+.to_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.to_login form{
+    width: 100%;
+    padding: 18px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+.to_register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.to_register form{
+    width: 100%;
+    padding: 18px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/*按钮样式*/
+button{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 6px; /* 圆角 */
+    cursor: pointer;
+}
+/*标题样式*/
+h2{
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    color:red;
+}

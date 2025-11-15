@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北化SNC社团登录</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <!-- 报名容器 -->
+    <div class="login-container">
+        <h2 class="login-title">用户登录</h2>
+        <!-- 报名表单 -->
+        <form id="loginBox">
+            <div class="form-box">
+                <label for="username">用户名</label>
+                <input type="text" id="username" placeholder="请输入用户名" required>
+            </div>
+            <div class="form-box">
+                <label for="password">密码</label>
+                <input type="password" id="password" placeholder="请输入密码" required>
+            </div>
+            <button type="submit" class="login-btn">登录</button>
+            <div class="error-tip" id="errorTip">用户名或密码错误</div>
+        </form>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎报名SNC社团</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <!-- SNC图片 -->
+    <img src="../backgroundimg/SNC.jpg">
+    <!-- SNC介绍 -->
+    <h1 class="welcome">欢迎报名SNC社团活动</h1>
+    <h3 class="introduce">北京化工大学学生网络中心(BUCT Student Network Center)成立于2001年4月，作为我校第二课堂人才培养基地、大学生创新基地，承担了校园网络社区的建设、管理和维护工作，并肩负了向全校师生普及电脑和网络知识、营造良好校园网络文化氛围的职责。</h3>
+    <h3 class="introduce">SNC下设<i>办公室、开发部、UI设计部、系统维护部、媒体运营部、市场部、宣传部七个职能部门</i>，涵盖软件开发、系统架构与维护、网络设计、网络媒体运营、用户体验设计及IT组织管理六个方面。</h3>
+    <!--报名表单-->
+    <div class="register-container">
+        <h2 class="register-title">报名入口</h2>
+        <form class="register-content" action="" id="registerForm">
+            <div class="register-box-basic_ifm">
+                <div class="register-box">
+                    <label for="name">姓名</label>
+                    <input type="text" id="studentname" placeholder="请输入姓名" required>
+                </div>
+                <div class="register-box">
+                    <label for="studentId">学号</label>
+                    <input type="text" id="studentId" placeholder="请输入学号" required>
+                </div>
+                <div class="register-box">
+                    <label for="college">学院</label>
+                    <input type="text" id="college" placeholder="请输入学院名称" required>
+                </div>
+                <div class="register-box">
+                    <label for="className">班级</label>
+                    <input type="text" id="className" placeholder="请输入班级名称" required>
+                </div>
+            </div>
+            <div class="activity-register">
+                <label class="">请选择</label>
+                <!-- 下拉选择组 -->
+                <select name="activity" id="activitySelect">
+                <option value="" selected disabled>请选择活动</option>
+                <option value="活动1">活动1</option>
+                <option value="活动2">活动2</option>
+                <option value="活动3">活动3</option>
+                </select>
+            </div>
+            <button type="submit" class="register-btn">提交</button>
+        </form>
+    </div>
+    <div class="thanks">
+        <strong>SNC感谢您的支持!!!</strong>
+    </div>
+    <script src="./register.js"></script>
+</body>
+</html>

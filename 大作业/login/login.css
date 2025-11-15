@@ -1,0 +1,104 @@
+/* 全局样式重置与基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "微软雅黑", sans-serif;
+}
+
+body {
+    background-image: url("../backgroundimg/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 让登录框垂直居中 AI*/
+    animation: WFB 25s linear 0s infinite;
+}
+/*设置背景图片滚动*/
+@keyframes WFB{
+    0%{
+        background-image: url("../backgroundimg/1.jpg");
+    }20%{
+        background-image: url("../backgroundimg/2.jpg");
+    }40%{
+        background-image: url("../backgroundimg/3.jpg");
+    }60%{
+        background-image: url("../backgroundimg/4.jpg");
+    }80%{
+        background-image: url("../backgroundimg/5.jpg");
+    }100%{
+        background-image: url("../backgroundimg/1.jpg");
+    }
+}
+/* 登录容器样式 */
+.login-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 8px;/*设置元素边框圆角*/
+    width: 100%;
+    box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+    max-width: 400px; /* 最大宽度限制，避免电脑端过宽 AI*/
+}
+
+/* 标题样式 */
+.login-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* 表单组样式*/
+.form-box {
+    margin-bottom: 20px;
+}
+
+.form-box label {
+    display: block;
+    color: #666;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* 输入框聚焦时边框变色过渡 AI*/
+}
+.form-box input:focus {
+    outline: none;
+    border-color: #409eff; /* 聚焦时边框变蓝色 */
+}/*AI润色*/
+
+/* 登录按钮样式 */
+.login-btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #409eff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #3086e8; /* 鼠标悬浮时按钮加深颜色 AI润色*/
+}
+
+/* 错误提示样式 AI*/
+.error-tip {
+    color: #f56c6c; /* 红色错误提示 */
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    display: none; /* 默认隐藏，验证失败时显示 */
+}
